@@ -1,5 +1,7 @@
 -include config/config.mak
 
+# debug with `PACKER_LOG=1 make <target>`
+
 build_only      ?=
 platform_ve     ?= proxmox
 
