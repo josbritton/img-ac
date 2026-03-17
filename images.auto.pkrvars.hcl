@@ -1,26 +1,26 @@
 image_repository = {
   debian-12-genericcloud-amd64 = {
-    url    = "https://cloud.debian.org/images/cloud/bookworm/20241201-1948/debian-12-genericcloud-amd64-20241201-1948.qcow2"
-    digest = "sha512:340cdafca262582e2ec013f2118a7daa9003436559a3e1cff637af0fc05d4c3755d43e15470bb40d7dd4430d355b44d098283fc4c7c6f640167667479eeeb0e0"
+    url    = "https://cloud.debian.org/images/cloud/trixie/20260316-2418/debian-13-genericcloud-amd64-20260316-2418.qcow2"
+    digest = "sha512:0e5edfbe49b0cca779a4a7dc9738f34c92e3ff481ee1f7d5c4e93e180654fe275eb8c96397224c6ca04a2910eaaed27489f431573ebe4cb5412ef257888b2b18"
   },
   debian-12-genericcloud-arm64 = {
-    url    = "https://cloud.debian.org/images/cloud/bookworm/20241201-1948/debian-12-genericcloud-arm64-20241201-1948.qcow2"
-    digest = "sha512:374c447d9019bbd6c2c1992b23c43c088950e22a43bb93c8b3dc25b12f1e7582034aad9a566062f247ce3cbf8f2aba313bc2396a1998d42d87cea42fe96728aa"
+    url    = "https://cloud.debian.org/images/cloud/trixie/20260316-2418/debian-13-genericcloud-arm64-20260316-2418.qcow2"
+    digest = "sha512:400d1651c2e6e5467736553cc67c91f06fdb6b4316d60ea45aa6a6e5dd91499048f7240628bc95c2a3d3d74bb3ed1f7e0df7d3698d1e3960e6eff2fbbee6b149"
   }
   debian-12-generic-amd64 = {
-    url    = "https://cloud.debian.org/images/cloud/bookworm/20241201-1948/debian-12-generic-amd64-20241201-1948.qcow2"
-    digest = "sha512:94db5b062486d2070c712bd96a7a85e5873ec17fc17bad3262639f9974a3491e13695fac1e72b006c20014b12b7bf211b017059f5b3e41d5da24990a7c1cc332"
+    url    = "https://cloud.debian.org/images/cloud/trixie/20260316-2418/debian-13-generic-amd64-20260316-2418.qcow2"
+    digest = "sha512:c6523db54404e320ed30787038f155f649995392697fa2a41e49458d36e056fda020593a03cf910fa7bf93bd5c510b12d6e7c7bf7852a03ee3a64536fecf0127"
   }
   debian-12-generic-arm64 = {
-    url    = "https://cloud.debian.org/images/cloud/bookworm/20241201-1948/debian-12-generic-arm64-20241201-1948.qcow2"
-    digest = "sha512:866c18fd1f7da3515f5cf3075c37d4206b12713fe2daf39a3630f680ff0c28eab757d993791c3f8c1a1bd813bd7ea5274fdd99b33388eddf226dbff6b2b3ef52"
+    url    = "https://cloud.debian.org/images/cloud/trixie/20260316-2418/debian-13-generic-arm64-20260316-2418.qcow2"
+    digest = "sha512:f0460932cd6992539c7c9142bb02a24af83243503bad0179b0813bd6269195785655348ea889daf5927f80853f63b3402a78176967854887dbca9da3859599a0"
   }
   debian-12-nocloud-amd64 = {
-    url    = "https://cloud.debian.org/images/cloud/bookworm/20241201-1948/debian-12-nocloud-amd64-20241201-1948.qcow2"
-    digest = "sha512:6e2122d6c7ca6714b11b2e1053c03081dea8915470d25a9105e81a32fba9966962faf241cc66276e8123436f601860da7e313a5324f5a812d1af705bcaeae635"
+    url    = "https://cloud.debian.org/images/cloud/trixie/20260316-2418/debian-13-nocloud-amd64-20260316-2418.qcow2"
+    digest = "sha512:16cda4c940507069d9b2f379d544fa0427022c3118bcbddfc4676f7a45653723c0335727e1c374b02fb6892663cab3e332d9b9a0baf54f5f76483d7d9c33d3dd"
   }
   debian-12-nocloud-arm64 = {
-    url    = "https://cloud.debian.org/images/cloud/bookworm/20241201-1948/debian-12-nocloud-arm64-20241201-1948.qcow2"
-    digest = "sha512:044c62eb8c300f41b221b9bfc5fdd86b99bbdd8b7604afe8e8ca8beee8db8943378f3d60dd1fcb9550a3cfd8044423532d6aac21b5907c28bb29d1b11ce6f12a"
+    url    = "https://cloud.debian.org/images/cloud/trixie/20260316-2418/debian-13-nocloud-arm64-20260316-2418.qcow2"
+    digest = "sha512:43bcc298b2dd03adadcaea146d9bf2813cf34fb24af731b5c215400e930297f2c8d2bd5d9759142f57986032ec8ab92cec16d4ef580d87895c3f888743a36ba3"
   }
 }
