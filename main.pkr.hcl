@@ -7,6 +7,10 @@ build {
     inline = ["/usr/bin/cloud-init status --wait"]
   }
 
+  error-cleanup-provisioner "shell" {
+    inline = ["cat /var/log/cloud-init-output.log >&2"]
+  }
+
   provisioner "ansible" {
     playbook_file = "config/ansible/${var.target}.yaml"
     galaxy_file   = "config/ansible/requirements.yaml"
