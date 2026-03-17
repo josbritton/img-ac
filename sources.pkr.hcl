@@ -47,6 +47,6 @@ source "qemu" "kvm" {
     })
   }
   qemuargs = [
-    ["-smbios", "type=1,serial=ds=nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/"]
+    ["-smbios", "type=1,serial=ds=nocloud;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/"]
   ]
 }
