@@ -46,7 +46,8 @@ def main():
     meta = {}
     for provider in {"genericcloud", "generic", "nocloud"}:
         for arch in {"amd64", "arm64"}:
-            uri = f"https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-{provider}-{arch}.json"
+            # todo: codename handling
+            uri = f"https://cloud.debian.org/images/cloud/trixie/latest/debian-13-{provider}-{arch}.json"
             data, ok = get_remote(uri)
             if not ok:
                 raise Exception("No data for: ", uri)
