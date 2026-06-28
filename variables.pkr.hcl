@@ -71,7 +71,10 @@ variable "vehost_sources" {
 variable "proxmox_settings" {
   type = map(object({
     memory       = string
+    cores        = string
     cpu          = string
+    cpuunits     = string
+    machine      = string
     net          = string
     scsihw       = string
     imagestorage = string
@@ -82,6 +85,9 @@ variable "proxmox_settings" {
     discard      = string
     diskformat   = string
     vmid         = string
+    asyncio      = string
+    iothread     = string
+    ssd          = string
   }))
   default = null
 }

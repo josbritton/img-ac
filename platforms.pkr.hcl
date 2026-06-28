@@ -43,7 +43,10 @@ build {
       "VMNAME=${lower(var.target)}",
       "VMID=${var.proxmox_settings[source.name].vmid}",
       "VMMEM=${var.proxmox_settings[source.name].memory}",
-      "VMCORES=${var.proxmox_settings[source.name].cpu}",
+      "VMCORES=${var.proxmox_settings[source.name].cores}",
+      "VMCPU=${var.proxmox_settings[source.name].cpu}",
+      "VMCPUUNITS=${var.proxmox_settings[source.name].cpuunits}",
+      "VMMACHINE=${var.proxmox_settings[source.name].machine}",
       "VMNET=${var.proxmox_settings[source.name].net}",
       "VMSCSIHW=${var.proxmox_settings[source.name].scsihw}",
       "VMSTORE=${var.proxmox_settings[source.name].imagestorage}",
@@ -53,6 +56,9 @@ build {
       "VMQEMUAGENT=${var.proxmox_settings[source.name].qemuagent}",
       "VMCACHE=${var.proxmox_settings[source.name].cache}",
       "VMDISCARD=${var.proxmox_settings[source.name].discard}",
+      "VMAIO=${var.proxmox_settings[source.name].asyncio}",
+      "VMIOTHREAD=${var.proxmox_settings[source.name].iothread}",
+      "VMSSD=${var.proxmox_settings[source.name].ssd}",
       "VMDISKFORMAT=${var.proxmox_settings[source.name].diskformat}"
     ]
   }

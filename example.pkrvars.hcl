@@ -35,9 +35,15 @@ vehost_sources = [
 proxmox_settings = {
   pve1 = {
     memory       = "4096"
-    cpu          = 8
+    cores        = 8
+    cpu          = "host"
+    cpuunits     = 1000
+    machine      = "q35"
     net          = "virtio,bridge=vmbr0"
     scsihw       = "virtio-scsi-single"
+    asyncio      = "io_uring"
+    iothread     = 1
+    ssd          = 1
     imagestorage = "rpool2"
     ostype       = "l26"
     balloon      = 0
@@ -48,9 +54,15 @@ proxmox_settings = {
   }
   pve2 = {
     memory       = "4096"
-    cpu          = 4
+    cores        = 4
+    cpu          = "x86-64-v3"
+    cpuunits     = 8000
+    machine      = "q35"
     net          = "virtio,bridge=vmbr0"
     scsihw       = "virtio-scsi-single"
+    asyncio      = "io_uring"
+    iothread     = 1
+    ssd          = 1
     imagestorage = "rpool2"
     ostype       = "l26"
     balloon      = 0

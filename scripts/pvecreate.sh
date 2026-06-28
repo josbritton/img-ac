@@ -48,6 +48,9 @@ fi
 assert_has_value "$VMNAME" "VMNAME"
 assert_has_value "$VMMEM" "VMMEM"
 assert_has_value "$VMCORES" "VMCORES"
+assert_has_value "$VMCPU" "VMCPU"
+assert_has_value "$VMCPUUNITS" "VMCPUUNITS"
+assert_has_value "$VMMACHINE" "VMMACHINE"
 assert_has_value "$VMNET" "VMNET"
 assert_has_value "$VMSCSIHW" "VMSCSIHW"
 assert_has_value "$VMSTORE" "VMSTORE"
@@ -58,19 +61,28 @@ assert_has_value "$VMCACHE" "VMCACHE"
 assert_has_value "$VMIMGPATH" "VMIMGPATH"
 assert_has_value "$VMDISKFORMAT" "VMDISKFORMAT"
 assert_has_value "$VMDISCARD" "VMDISCARD"
+assert_has_value "$VMAIO" "VMAIO"
+assert_has_value "$VMSSD" "VMSSD"
+assert_has_value "$VMIOTHREAD" "VMIOTHREAD"
 
 assert_is_file "$VMIMGPATH" "VMIMGPATH"
 
 qm create "$VMID" \
     --name "$VMNAME" \
     --memory "$VMMEM" \
-    --core "$VMCORES" \
+    --cores "$VMCORES" \
+    --cpu "$VMCPU" \
+    --cpuunits "$VMCPUUNITS" \
+    --machine "$VMMACHINE" \
     --net0 "$VMNET" \
     --scsihw "$VMSCSIHW" \
     --scsi0 "$VMSTORE:0,\
 import-from=$VMIMGPATH,\
 cache=$VMCACHE,\
 discard=$VMDISCARD,\
+aio=$VMAIO,\
+ssd=$VMSSD,\
+iothread=$VMIOTHREAD,\
 format=$VMDISKFORMAT" \
     --boot order=scsi0 \
     --ostype "$VMOSTYPE" \
